@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+
+    <a href="index.html" class="back-btn">← Back</a>
+
+    <div class="detail-container">
+        <img id="product-img">
+
+        <div class="detail-info">
+            <h1 id="product-name"></h1>
+            <p id="product-desc"></p>
+            <h2 id="product-price"></h2>
+
+            <button class="add-cart" style="margin-top:20px;">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            cheesecake: {
+                name: "Cheesecake",
+                desc: "Creamy, rich and smooth cheesecake.",
+                price: "80.000đ",
+                img: "img/cheesecake.jpg"
+            },
+            brownies: {
+                name: "Brownies",
+                desc: "Fudgy chocolate brownies with nuts.",
+                price: "35.000đ",
+                img: "img/brownies.jpg"
+            },
+            cookies: {
+                name: "Cookies",
+                desc: "Crunchy handmade cookies.",
+                price: "50.000đ",
+                img: "img/cookies.jpg"
+            },
+            macaron: {
+                name: "Macaron",
+                desc: "Soft, sweet French-style macarons.",
+                price: "35.000đ",
+                img: "img/macaron.jpg"
+            }
+        };
+
+        let url = new URLSearchParams(window.location.search);
+        let item = url.get("item");
+
+        let p = data[item];
+
+        document.getElementById("product-img").src = p.img;
+        document.getElementById("product-name").textContent = p.name;
+        document.getElementById("product-desc").textContent = p.desc;
+        document.getElementById("product-price").textContent = p.price;
+    </script>
+
+</body>
+</html>

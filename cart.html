@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="attempt.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Pastel Cakes</div>
+    <ul class="nav-links">
+        <li><a href="front.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<section class="cart-section">
+    <h2>Your Cart 🛒</h2>
+
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Cake</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+    </table>
+
+    <h3 id="grand-total">Total: 0đ</h3>
+
+    <button id="clear-cart" class="clear-btn">Clear Cart</button>
+</section>
+
+<script src="test.js"></script>
+</body>
+</html>

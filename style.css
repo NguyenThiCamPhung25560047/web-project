@@ -1,0 +1,279 @@
+/* ---------- GLOBAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #fff6fd;
+    color: #444;
+    transition: 0.3s ease;
+}
+
+body.dark {
+    background: #1a1a1a;
+    color: #ddd;
+}
+
+/* Fade animation */
+.fade-in {
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+body.dark .navbar {
+    background: #222;
+}
+
+.logo {
+    font-family: "Pacifico";
+    font-size: 32px;
+    color: #ff7bbb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+body.dark .nav-links a {
+    color: #eee;
+}
+
+.nav-links a:hover, .active {
+    color: #ff7bbb !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+body.dark .dropdown-menu {
+    background: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dark mode button */
+.theme-toggle {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+/* ---------- HERO ---------- */
+.hero {
+    height: 70vh;
+    background: url("img/hero-bg.jpg") center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.35);
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    font-family: Pacifico;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background: #ff7bbb;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ff5ca3;
+    transform: translateY(-3px);
+}
+
+
+/* ---------- CAKES SECTION ---------- */
+.cakes-section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.cake-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cake-card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+body.dark .cake-card {
+    background: #2c2c2c;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+}
+
+.cake-card img {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff7bbb;
+    margin-top: 5px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.detail-btn, .add-cart {
+    flex: 1;
+    margin: 3px;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detail-btn {
+    background: #cce5ff;
+}
+
+.detail-btn:hover {
+    background: #a6d0ff;
+}
+
+.add-cart {
+    background: #ffd0e8;
+}
+
+.add-cart:hover {
+    background: #ffb1d9;
+}
+
+
+/* ---------- RECOMMEND ---------- */
+.recommend-section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.ingredient-checkboxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.recommend-btn {
+    padding: 12px 25px;
+    background: #ff9ed1;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.recommend-btn:hover {
+    background: #ff82c2;
+}
+
+
+/* ---------- FOOTER ---------- */
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    background: #ffe0f3;
+}
+
+body.dark .footer {
+    background: #2c2c2c;
+}
+
+.footer-logo {
+    font-family: Pacifico;
+    color: #ff5ca3;
+    font-size: 32px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #777;
+}
