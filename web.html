@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakeology – Pastel Cake Shop</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body class="fade-in">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Bakeology</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Menu ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#cakes">Seasonal Items</a></li>
+                    <li><a href="#products">All Products</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+
+        <div class="theme-toggle" id="theme-toggle">🌙</div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Bakeology</h1>
+            <p>Where every bite tastes like happiness ✨</p>
+            <a href="#cakes">
+                <button class="hero-btn">Shop Now</button>
+            </a>
+        </div>
+    </header>
+
+    <!-- PRODUCT SECTION -->
+    <section id="cakes" class="cakes-section">
+        <h2>Our Signature Cakes</h2>
+
+        <div class="cake-list">
+
+            <!-- 1. Cheesecake -->
+            <div class="cake-card">
+                <img src="https://www.recipetineats.com/tachyon/2024/09/No-bake-cheesecake_8.jpg" alt="">
+                <h3>Cheesecake</h3>
+                <p>Creamy & rich cheesecake.</p>
+                <div class="price">80.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="cheesecake">Details</button>
+                    <button class="add-cart" data-item="Cheesecake" data-price="80000">Add</button>
+                </div>
+            </div>
+
+            <!-- 2. Brownies -->
+            <div class="cake-card">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-50773_12-39c611e.jpg" alt="">
+                <h3>Brownies</h3>
+                <p>Fudgy chocolate brownies.</p>
+                <div class="price">35.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="brownies">Details</button>
+                    <button class="add-cart" data-item="Brownies" data-price="35000">Add</button>
+                </div>
+            </div>
+
+            <!-- 3. Cookies -->
+            <div class="cake-card">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2024/08/chocolate-chip-cookie-recipe.jpg" alt="">
+                <h3>Cookies</h3>
+                <p>Handmade crunchy cookies.</p>
+                <div class="price">50.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="cookies">Details</button>
+                    <button class="add-cart" data-item="Cookies" data-price="50000">Add</button>
+                </div>
+            </div>
+
+            <!-- 4. Macaron -->
+            <div class="cake-card">
+                <img src="https://mojo.generalmills.com/api/public/content/Z7QDsgL_S5K7cLZAfdG1-A_webp_base.webp" alt="">
+                <h3>Macaron</h3>
+                <p>Sweet & colorful macarons.</p>
+                <div class="price">35.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="macaron">Details</button>
+                    <button class="add-cart" data-item="Macaron" data-price="35000">Add</button>
+                </div>
+            </div>
+
+            <!-- 5. Ube Velvet Cake -->
+            <div class="cake-card">
+                <img src="https://wildflourtogo.com/cdn/shop/products/UbeVelvetCakeSlice.jpg?v=1668563369" alt="">
+                <h3>Ube Velvet Cake</h3>
+                <p>Soft purple cake with cream cheese frosting.</p>
+                <div class="price">90.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="ubevelvet">Details</button>
+                    <button class="add-cart" data-item="Ube Velvet Cake" data-price="90000">Add</button>
+                </div>
+            </div>
+
+            <!-- 6. Matcha Citrus Cake -->
+            <div class="cake-card">
+                <img src="https://picklesnhoney.com/wp-content/uploads/2017/02/matcha-cake-3.jpg" alt="">
+                <h3>Matcha Citrus Cake</h3>
+                <p>Refreshing matcha with a hint of citrus.</p>
+                <div class="price">85.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="matchacitrus">Details</button>
+                    <button class="add-cart" data-item="Matcha Citrus Cake" data-price="85000">Add</button>
+                </div>
+            </div>
+
+            <!-- 7. Pistachio Cake -->
+            <div class="cake-card">
+                <img src="https://plantbasedcookingshow.com/wp-content/uploads/2025/04/pistachio-cake-2.jpeg" alt="">
+                <h3>Pistachio Cake</h3>
+                <p>Nutty and elegant pistachio flavor.</p>
+                <div class="price">95.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="pistachio">Details</button>
+                    <button class="add-cart" data-item="Pistachio Cake" data-price="95000">Add</button>
+                </div>
+            </div>
+
+            <!-- 8. Mini Red Velvet -->
+            <div class="cake-card">
+                <img src="https://preppykitchen.com/wp-content/uploads/2022/01/Red-Velvet-Cake-Recipe-Card.jpg" alt="">
+                <h3>Mini Red Velvet</h3>
+                <p>Classic red velvet in individual portion.</p>
+                <div class="price">75.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="miniredvelvet">Details</button>
+                    <button class="add-cart" data-item="Mini Red Velvet" data-price="75000">Add</button>
+                </div>
+            </div>
+
+            <!-- 9. Tiramisu -->
+            <div class="cake-card">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2019/06/Tiramisu_5.jpg" alt="">
+                <h3>Tiramisu</h3>
+                <p>Italian coffee-flavored classic dessert.</p>
+                <div class="price">95.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="tiramisu">Details</button>
+                    <button class="add-cart" data-item="Tiramisu" data-price="95000">Add</button>
+                </div>
+            </div>
+
+            <!-- 10. Lemon Tart -->
+            <div class="cake-card">
+                <img src="https://natashaskitchen.com/wp-content/uploads/2020/07/Lemon-Tart-Recipe-3.jpg" alt="">
+                <h3>Lemon Tart</h3>
+                <p>Zesty lemon cream tart with crispy crust.</p>
+                <div class="price">55.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="lemontart">Details</button>
+                    <button class="add-cart" data-item="Lemon Tart" data-price="55000">Add</button>
+                </div>
+            </div>
+
+            <!-- 11. Blueberry Muffin -->
+            <div class="cake-card">
+                <img src="https://www.allrecipes.com/thmb/XsoK8OMXVX71szEx3LC0rwBf5VU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6628501-easy-blueberry-muffins-kims-cooking-now-4x3-1-456092c3a0bc4b4e83cb3b26c8c1d2ab.jpg" alt="">
+                <h3>Blueberry Muffin</h3>
+                <p>Soft muffin filled with fresh blueberries.</p>
+                <div class="price">40.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="muffin">Details</button>
+                    <button class="add-cart" data-item="Blueberry Muffin" data-price="40000">Add</button>
+                </div>
+            </div>
+
+            <!-- 12. Matcha Roll Cake -->
+            <div class="cake-card">
+                <img src="https://cdn0.weddingwire.com/vendor/440002_964_1000/jpeg/65887042_2249807095266792_6286311594115553298_n_51_440002_v1.jpeg" alt="">
+                <h3>Matcha Roll Cake</h3>
+                <p>Soft roll cake filled with matcha cream.</p>
+                <div class="price">65.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="matcharoll">Details</button>
+                    <button class="add-cart" data-item="Matcha Roll Cake" data-price="65000">Add</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RECOMMENDATION -->
+    <section id="recommend" class="recommend-section">
+        <h2>🎂 Cake Recommendation</h2>
+        <p>Select ingredients you have:</p>
+        <div class="ingredient-checkboxes">
+            <label><input type="checkbox" value="flour"> Flour</label>
+            <label><input type="checkbox" value="chocolate"> Chocolate</label>
+            <label><input type="checkbox" value="eggs"> Eggs</label>
+            <label><input type="checkbox" value="sugar"> Sugar</label>
+            <label><input type="checkbox" value="milk"> Milk</label>
+            <label><input type="checkbox" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" value="matcha"> Matcha</label>
+        </div>
+        <button id="recommend-btn" class="recommend-btn">Recommend Cake</button>
+        <div id="recommendation-result"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3 class="footer-logo">Bakeology</h3>
+        <p>Made with ❤️ 2025 Bakeology</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
