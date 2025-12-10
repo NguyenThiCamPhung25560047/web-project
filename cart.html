@@ -3,40 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart</title>
-    <link rel="stylesheet" href="attempt.css">
+    <title>Bakeology</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-<body>
 
-<nav class="navbar">
-    <div class="logo">Pastel Cakes</div>
-    <ul class="nav-links">
-        <li><a href="front.html">Home</a></li>
-        <li><a href="cart.html">Cart</a></li>
-    </ul>
-</nav>
+<body class="fade-in">
 
-<section class="cart-section">
-    <h2>Your Cart 🛒</h2>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Bakeology</div>
 
-    <table class="cart-table">
-        <thead>
-            <tr>
-                <th>Cake</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="cart-body"></tbody>
-    </table>
+        <ul class="nav-links">
+            <li><a href="web.html" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Menu ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sesonal.html">Seasonal Items</a></li>
+                    <li><a href="#products">Share Ur Cake</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
 
-    <h3 id="grand-total">Total: 0đ</h3>
+        <div class="theme-toggle" id="theme-toggle">🌙</div>
+    </nav>
+    
+    <div class="cart-container">
+        <h2>Your Cart</h2>
 
-    <button id="clear-cart" class="clear-btn">Clear Cart</button>
-</section>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Cart items will be dynamically injected here -->
+            </tbody>
+        </table>
 
-<script src="test.js"></script>
+        <div id="grand-total-container">
+            <p>Total: <span id="grand-total">0đ</span></p>
+        </div>
+
+        <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
