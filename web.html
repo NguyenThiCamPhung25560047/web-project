@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakeology – Pastel Cake Shop</title>
+    <title>Bakeology</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -19,12 +19,12 @@
         <div class="logo">Bakeology</div>
 
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="web.html" class="active">Home</a></li>
             <li class="dropdown">
                 <a href="#">Menu ▼</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#cakes">Seasonal Items</a></li>
-                    <li><a href="#products">All Products</a></li>
+                    <li><a href="sesonal.html">Seasonal Items</a></li>
+                    <li><a href="#products">Share Ur Cake</a></li>
                 </ul>
             </li>
             <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
@@ -62,17 +62,18 @@
 
         <div class="cake-list">
 
-            <!-- 1. Cheesecake -->
-            <div class="cake-card">
-                <img src="https://www.recipetineats.com/tachyon/2024/09/No-bake-cheesecake_8.jpg" alt="">
-                <h3>Cheesecake</h3>
-                <p>Creamy & rich cheesecake.</p>
-                <div class="price">80.000đ</div>
-                <div class="card-buttons">
-                    <button class="detail-btn" data-product="cheesecake">Details</button>
-                    <button class="add-cart" data-item="Cheesecake" data-price="80000">Add</button>
-                </div>
-            </div>
+<!-- 1. Cheesecake -->
+<div class="cake-card">
+    <img src="https://www.recipetineats.com/tachyon/2024/09/No-bake-cheesecake_8.jpg" alt="Cheesecake">
+    <h3>Cheesecake</h3>
+    <p>Creamy & rich cheesecake.</p>
+    <div class="price">80.000đ</div>
+    <div class="card-buttons">
+        <!-- Details button with JavaScript -->
+        <button class="detail-btn" data-product="cheesecake" onclick="window.location.href='cheesecake-detail.html'">Details</button>
+        <button class="add-cart" data-item="Cheesecake" data-price="80.000">Add</button>
+    </div>
+</div>
 
             <!-- 2. Brownies -->
             <div class="cake-card">
@@ -82,7 +83,7 @@
                 <div class="price">35.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="brownies">Details</button>
-                    <button class="add-cart" data-item="Brownies" data-price="35000">Add</button>
+                    <button class="add-cart" data-item="Brownies" data-price="35.000">Add</button>
                 </div>
             </div>
 
@@ -94,7 +95,7 @@
                 <div class="price">50.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="cookies">Details</button>
-                    <button class="add-cart" data-item="Cookies" data-price="50000">Add</button>
+                    <button class="add-cart" data-item="Cookies" data-price="50.000">Add</button>
                 </div>
             </div>
 
@@ -106,7 +107,7 @@
                 <div class="price">35.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="macaron">Details</button>
-                    <button class="add-cart" data-item="Macaron" data-price="35000">Add</button>
+                    <button class="add-cart" data-item="Macaron" data-price="35.000">Add</button>
                 </div>
             </div>
 
@@ -118,7 +119,7 @@
                 <div class="price">35.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="cupcake">Details</button>
-                    <button class="add-cart" data-item="Cup Cake" data-price="90000">Add</button>
+                    <button class="add-cart" data-item="Cup Cake" data-price="35.000">Add</button>
                 </div>
             </div>
 
@@ -130,7 +131,7 @@
                 <div class="price">85.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="matchacitrus">Details</button>
-                    <button class="add-cart" data-item="Matcha Citrus Cake" data-price="85000">Add</button>
+                    <button class="add-cart" data-item="Matcha Citrus Cake" data-price="85.000">Add</button>
                 </div>
             </div>
 
@@ -142,7 +143,7 @@
                 <div class="price">35.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="croissant">Details</button>
-                    <button class="add-cart" data-item="Croissant" data-price="95000">Add</button>
+                    <button class="add-cart" data-item="Croissant" data-price="35.000">Add</button>
                 </div>
             </div>
 
@@ -154,7 +155,7 @@
                 <div class="price">75.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="miniredvelvet">Details</button>
-                    <button class="add-cart" data-item="Mini Red Velvet" data-price="75000">Add</button>
+                    <button class="add-cart" data-item="Mini Red Velvet" data-price="75.000">Add</button>
                 </div>
             </div>
 
@@ -166,7 +167,7 @@
                 <div class="price">95.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="tiramisu">Details</button>
-                    <button class="add-cart" data-item="Tiramisu" data-price="95000">Add</button>
+                    <button class="add-cart" data-item="Tiramisu" data-price="95.000">Add</button>
                 </div>
             </div>
 
@@ -178,7 +179,7 @@
                 <div class="price">55.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="lemontart">Details</button>
-                    <button class="add-cart" data-item="Lemon Tart" data-price="55000">Add</button>
+                    <button class="add-cart" data-item="Lemon Tart" data-price="55.000">Add</button>
                 </div>
             </div>
 
@@ -190,7 +191,7 @@
                 <div class="price">40.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="apple pie">Details</button>
-                    <button class="add-cart" data-item="Apple Pie" data-price="40000">Add</button>
+                    <button class="add-cart" data-item="Apple Pie" data-price="40.000">Add</button>
                 </div>
             </div>
 
@@ -202,29 +203,39 @@
                 <div class="price">65.000đ</div>
                 <div class="card-buttons">
                     <button class="detail-btn" data-product="matcharoll">Details</button>
-                    <button class="add-cart" data-item="Matcha Roll Cake" data-price="65000">Add</button>
+                    <button class="add-cart" data-item="Matcha Roll Cake" data-price="65.000">Add</button>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- RECOMMENDATION -->
-    <section id="recommend" class="recommend-section">
-        <h2>🎂 Cake Recommendation</h2>
-        <p>Select ingredients you have:</p>
-        <div class="ingredient-checkboxes">
-            <label><input type="checkbox" value="flour"> Flour</label>
-            <label><input type="checkbox" value="chocolate"> Chocolate</label>
-            <label><input type="checkbox" value="eggs"> Eggs</label>
-            <label><input type="checkbox" value="sugar"> Sugar</label>
-            <label><input type="checkbox" value="milk"> Milk</label>
-            <label><input type="checkbox" value="strawberry"> Strawberry</label>
-            <label><input type="checkbox" value="matcha"> Matcha</label>
-        </div>
-        <button id="recommend-btn" class="recommend-btn">Recommend Cake</button>
-        <div id="recommendation-result"></div>
-    </section>
+<!-- RECOMMENDATION SECTION -->
+<section id="recommend" class="recommend-section">
+    <h2>🎂 Cake Recommendation</h2>
+    <p>Select ingredients you have:</p>
+    <div class="ingredient-checkboxes">
+        <label><input type="checkbox" value="flour"> Flour</label>
+        <label><input type="checkbox" value="chocolate"> Chocolate</label>
+        <label><input type="checkbox" value="eggs"> Eggs</label>
+        <label><input type="checkbox" value="sugar"> Sugar</label>
+        <label><input type="checkbox" value="milk"> Milk</label>
+        <label><input type="checkbox" value="strawberry"> Strawberry</label>
+        <label><input type="checkbox" value="matcha"> Matcha</label>
+        <label><input type="checkbox" value="butter"> Butter</label>
+        <label><input type="checkbox" value="cocoa"> Cocoa Powder</label>
+        <label><input type="checkbox" value="creamcheese"> Cream Cheese</label>
+        <label><input type="checkbox" value="almond"> Almond</label>
+        <label><input type="checkbox" value="apples"> Apples</label>
+        <label><input type="checkbox" value="coffee"> Coffee</label>
+        <label><input type="checkbox" value="lemon"> Lemon</label>
+        <label><input type="checkbox" value="cinnamon"> Cinnamon</label>
+        <label><input type="checkbox" value="yeast"> Yeast</label>
+        <label><input type="checkbox" value="ladyfingers"> Ladyfingers</label>
+    </div>
+    <button id="recommend-btn" class="recommend-btn">Recommend Cake</button>
+    <div id="recommendation-result"></div>
+</section>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -232,6 +243,6 @@
         <p>Made with ❤️ 2025 Bakeology</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
