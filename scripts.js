@@ -96,7 +96,7 @@ function renderCart() {
         row.querySelector(".remove-btn").addEventListener("click", () => removeItem(index));
     });
 
-    document.getElementById("grand-total").textContent = `Total: ${grandTotal.toLocaleString()}đ`;
+    document.getElementById("grand-total").textContent = `${grandTotal.toLocaleString()}đ`;
 }
 // Change quantity
 function changeQty(index, amount) {
