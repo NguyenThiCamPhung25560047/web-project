@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Cakes – Bakeology</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body class="fade-in">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Bakeology</div>
+
+        <ul class="nav-links">
+            <li><a href="web.html">Home</a></li>
+            <li><a href="seasonal.html" class="active">Sesonal Items</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+
+        <div class="theme-toggle" id="theme-toggle">🌙</div>
+    </nav>
+
+    <!-- CHRISTMAS CAKES SECTION -->
+    <section id="christmas-cakes" class="cakes-section">
+        <h2>🎄 Christmas Special Cakes</h2>
+        <p>Celebrate the season with our festive cakes!</p>
+
+        <div class="cake-list">
+
+
+
+            <!-- Gingerbread Cake -->
+            <div class="cake-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRbmP3YNN5VRbpUdIj_SJl9ySVncpNFlBRg&s" alt="Gingerbread Cake">
+                <h3>Gingerbread</h3>
+                <p>Spicy and soft gingerbread cake, perfect for Christmas.</p>
+                <div class="price">25.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="gingerbreadcake">Details</button>
+                    <button class="add-cart" data-item="Gingerbread Cake" data-price="90000">Add</button>
+                </div>
+            </div>
+
+            <!-- Yule Log Cake -->
+            <div class="cake-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLuslnIrsQiDAcTttL7-yyoRnnh7cxMnysA&s" alt="Yule Log Cake">
+                <h3>Yule Log Cake</h3>
+                <p>A traditional Christmas dessert shaped like a log, with rich chocolate flavor.</p>
+                <div class="price">100.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="yulelog">Details</button>
+                    <button class="add-cart" data-item="Yule Log Cake" data-price="150000">Add</button>
+                </div>
+            </div>
+
+            <!-- Snowman Cupcakes -->
+            <div class="cake-card">
+                <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/melting_snowman_cupcakes_77135_16x9.jpg" alt="Snowman Cupcakes">
+                <h3>Snowman Cupcakes</h3>
+                <p>Cute and festive snowman cupcakes with buttercream frosting.</p>
+                <div class="price">50.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="snowman-cupcakes">Details</button>
+                    <button class="add-cart" data-item="Snowman Cupcakes" data-price="50000">Add</button>
+                </div>
+            </div>
+
+            <!-- Christmas Pudding -->
+            <div class="cake-card">
+                <img src="https://www.christinascucina.com/wp-content/uploads/2016/12/fullsizeoutput_38f4-scaled.jpeg" alt="Christmas Pudding">
+                <h3>Christmas Pudding</h3>
+                <p>A rich steamed pudding with dried fruit, perfect for Christmas dinner.</p>
+                <div class="price">80.000đ</div>
+                <div class="card-buttons">
+                    <button class="detail-btn" data-product="christmaspudding">Details</button>
+                    <button class="add-cart" data-item="Christmas Pudding" data-price="80000">Add</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3 class="footer-logo">Bakeology</h3>
+        <p>Made with ❤️ 2025 Bakeology</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
